@@ -1,0 +1,117 @@
+body {
+    font-family: 'Signika', sans-serif;
+    background-color: #000000; 
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+}
+.app-bar {
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.app-bar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+.app-bar .logo-and-button {
+    display: flex;
+    align-items: center;
+}
+.app-bar img {
+    height: 20px;
+}
+.logo{
+    display: none;
+}
+.community-page-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.download-button {
+    background-color: transparent; 
+    color: #ffffff; 
+    border: 2px solid transparent; 
+    padding: 15px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+   
+    border-image: linear-gradient(to right, #0C74D7, #EF8265, #BC307E, #2F4ACF);
+    border-image-slice: 1; 
+    margin-top: 20px;
+
+}
+.download-button:hover {
+    transform: scale(1.1);
+}
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0 20px;
+}
+.right-content {
+    flex: 1;
+    text-align: center;
+}
+.mock-phone img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+@media (max-width: 768px) {
+   
+    .main-content {
+        flex-direction: column;
+    }
+    .left-content,
+    .right-content {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .mock-phone {
+        display: none;
+    }
+    .logo {
+        display: inline;
+        width: 100%;
+        max-width: 120px;
+    }
+}
+.logo-and-button {
+    gap: 20px; 
+}
+.main-content h2 {
+    color: #ED2478;
+    font-weight: bold;
+    font-size: 60px;
+}
+.description {
+    max-width: 420px;
+   
+    font-size: 20px;
+    color: #c2c2c2;
+    text-align: justify;
+}
+.left-content h2 {
+    margin-bottom: 20px;
+}
